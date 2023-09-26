@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#search_bar{
+    width: 30rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    align-items: center;
+    
+}
+.search_area{
+    border: 1px solid rgb(249, 247, 247);
+    display: flex;
+    width: 525px;
+    padding: 6px 10px;
+    border-radius: 10px;
+}

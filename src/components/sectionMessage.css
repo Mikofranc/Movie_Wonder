@@ -1,0 +1,19 @@
+.first-section{
+    width: 404px;
+    margin:3rem 5rem;
+}
+.paragraph-one{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 27px;
+    font-style: normal;
+}
+.paragraph-two{
+    font-family: DM Sans;
+    font-size: 20px;
+    line-height: 2.2rem;
+}
+.first-section img{
+    background-color: transparent;
+    border-radius: 10px;
+}

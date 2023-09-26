@@ -1,0 +1,13 @@
+.sign_up{
+  width: fit-content;
+  padding: 3rem;
+  border: 1px solid grey;
+  margin: 3rem auto;
+}
+input{
+    display: block;
+    margin: 3px;
+  }
+  button{
+    display: block;
+  }
