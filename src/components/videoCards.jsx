@@ -1,20 +1,14 @@
 import React from "react";
 import "./videoCards.css"
+import { useState } from "react";
 
 function VideoCards (){
-    var videoData ={};
+    const [movieObj, setMovieObj] = useState(null);
 
     fetch("http://www.omdbapi.com/?i=tt3896198&apikey=5fac1ff8")
     .then(response => response.json())
     .then((response) => {
-
-        console.log(response);
-         console.log(response.Title);
-         console.log(response.Poster);
-        console.log(response.Actors);
-        console.log(response.Genre);
-
-        console.log(videoData.Actors)
+        setMovieObj(response)
     })
 
     return (
@@ -24,14 +18,12 @@ function VideoCards (){
                 <br />
                 <br />
                 <h1 >Featured movies</h1>
-                <img src="" alt="" />
-                <h1>
-
-                </h1>
+                <h3>
+                    {movieObj?.Title}
+                </h3>
+                <img src={movieObj?.Poster} alt="" />
 
             </div>
-            
-            {/* {console.log(videoData)} */}
         </div>
     )
 }
