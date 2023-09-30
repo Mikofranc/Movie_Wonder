@@ -3,12 +3,15 @@ import "./videoCards.css"
 import { useState } from "react";
 
 function VideoCards (){
-    const [movieObj, setMovieObj] = useState(null);
+    const [moviePoster, setMoviePoster] = useState("");
+    const [movieTitle, setMovieTitle] = useState("");
+
 
     fetch("http://www.omdbapi.com/?i=tt3896198&apikey=5fac1ff8")
     .then(response => response.json())
     .then((response) => {
-        setMovieObj(response)
+        setMoviePoster(response.Poster)
+        setMovieTitle(response.Title)
     })
 
     return (
@@ -19,9 +22,9 @@ function VideoCards (){
                 <br />
                 <h1 >Featured movies</h1>
                 <h3>
-                    {movieObj?.Title}
+                    {movieTitle}
                 </h3>
-                <img src={movieObj?.Poster} alt="" />
+                <img src={moviePoster} alt="" />
 
             </div>
         </div>

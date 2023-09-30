@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/header';
 import FirstSection from './components/sectionMessage';
 import VideoCards from './components/videoCards';
+import poster from './components/Poster.svg'
 
 class App extends Component {
   render() {
